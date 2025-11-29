@@ -35,9 +35,6 @@ var myCart = [];
 window.onload = function() {
     console.log("Page loaded."); // Requirement: Console Log 1
     
-    // Lucide check removed to be compliant, assuming simple text/emojis used in HTML
-    
-    // Load Cart from Local Storage (Critical for multi-page support)
     var storedCart = localStorage.getItem('noiraCart');
     if (storedCart) {
         myCart = JSON.parse(storedCart);
